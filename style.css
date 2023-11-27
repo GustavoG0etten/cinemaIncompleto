@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.titulo {
+    font-size: 36px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    text-align: center; /* Alinhamento central */
+    color: #1C1C1C;    
+}
+
+.caixa-titulo {
+    background-image: linear-gradient(to right, #FF8C00, #FFFF00);
+    padding: 1px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.button-container {
+    margin-top: 120px; 
+    text-align: center;
+}
+
+p strong {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.filme-container {
+    display: flex;
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+.imagem-filmes {
+    width: 300px;
+    height: 450px;
+    max-width: 100%;
+}
+
+.informacoes-filme {
+    flex: 1;
+    padding: 0 20px;
+}
+
+a,
+button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #FF6C00;
+}
+
+.informacoes-botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.caixa-filme {
+    border: 2px solid #007BFF;
+    padding: 25px;
+    margin: 20px auto;
+    background-color: #222;
+    max-width: 800px;
+}
+
+.titulo-filme {
+    font-size: 24px;
+}
+
+.imagem-filmes {
+    max-width: 100%;
+}
+
+.valor-ingresso {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.valor-ingresso p {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.valor-ingresso-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.valor-ingresso {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.valor-ingresso p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.valor-ingresso ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.valor-ingresso li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.meia-entrada {
+    font-size: 10px;
+}
+
+.preco-ingresso-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fechar-tabela {
+    background-color: #FF6C00;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.fechar-tabela {
+    background-color: #FF6C00;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.fechar-tabela:hover {
+    background-color: #FF4500;
+    cursor: pointer;
+}
+
+.fechar-tabela-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.em-breve-botao {
+    color: black;
+    background-color: red;
+}
+
+.tabela-filme {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.tabela-filme th,
+.tabela-filme td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela-filme th {
+    background-color: #333;
+    color: #fff;
+}
+
+.tabela-filme .legendado {
+    background-color: #00cc00;
+    /* Cor de fundo para a versão legendada */
+    color: #fff;
+    text-align: center;
+}
+
+.tabela-filme .dublado {
+    background-color: #ff6600;
+    /* Cor de fundo para a versão dublada */
+    color: #fff;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    margin: 0 10px;
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fundo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    /* Efeito de desfoque */
+}
+
+.cover.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.preco-pacote {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.preco-pacote p {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

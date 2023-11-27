@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Tarefa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="caixa-titulo">
+        <h2 class="titulo"><strong>cineMAX</strong></h2>
+    </div>
+
+    <div class="button-container">
+        
+        <button class="valor-ingresso-button" onclick="mostrarHome()">Home</button>
+        <button class="valor-ingresso-button" onclick="mostrarClubMax()">ClubMax</button>
+        <button class="valor-ingresso-button" onclick="mostrarPrecos()">Preços</button>
+        <button class="valor-ingresso-button" onclick="mostrarSobre()">Sobre</button>
+    </div>
+
+    <div class="preco-ingresso-container">
+        <div class="valor-ingresso hidden">
+            <div class="fechar-tabela-container">
+                <button class="fechar-tabela" onclick="fecharValores()">FECHAR</button>
+            </div>
+            <p>Preços - cineMAX Blumenau</p>
+            <ul>
+                <li>INTEIRA: R$ 30,00</li>
+                <li>INTEIRA 3D: R$ 36,00</li>
+                <li>INTEIRA PREMIUM: R$ 36,00</li>
+                <li>INTEIRA 3D PREMIUM: R$ 42,00</li>
+            </ul>
+
+            <ul>
+                <p class="meia-entrada">Meia - Entrada todos os dias</p>
+
+                <li>Crianças a partir de 3 anos, menores de 18 anos e Maiores de 60 anos (mediante apresentação de
+                    identidade)</li>
+                <li>Estudantes </li>
+                <li>Pessoa com deficiência, mediante documento que comprove sua deficiência</li>
+                <li>Movie Club Preferencial (cartão verde fidelidade cineMAX)</li>
+                <li>Professores do ensino médio do Estado de Santa Catarina, no exercício da profissão, mediante
+                    apresentação de contracheque e carteira de identidade.</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div id="sessao-home" class="hidden">
+        <button class="fechar-tabela" onclick="fecharSecao('sessao-home')">FECHAR</button>
+        <h2>clubMAX Passe de filmes</h2>
+    </div>
+
+    <div id="sessao-club-max    " class="hidden">
+        <button class="fechar-tabela" onclick="fecharSecao('sessao-home')">FECHAR</button>
+        <h2>clubMAX Passe de filmes</h2>
+    </div>
+    
+    <div id="sessao-sobre" class="hidden">
+        <button class="fechar-tabela" onclick="fecharSecao('sessao-sobre')">FECHAR</button>
+        <h2>Que bom</h2>
+    </div>
+
+
+
+
+    <!-- Filme 1 -->
+
+    <div class="caixa-filme">
+        <div class="filme-container">
+            <img class="imagem-filmes" src="img/johnwick4.jpg" alt="Imagem filme John Wick 4 Baba Yaga">
+
+            <div class="informacoes-filme">
+                <p class="titulo-filme"><strong>JOHN WICK 4 Baba Yaga</strong></p>
+
+                <P>Com o preço por sua cabeça cada vez maior, o lendário assassino de aluguel
+                    John Wick leva sua luta contra o High Table global enquanto procura os jogadores
+                    mais poderosos do submundo, de Nova York a Paris, do Japão a Berlim.
+                </P>
+
+                <div class="botoes-container">
+                    <a class="informacoes-botao" href="filmes/johnwick4.html">MAIS INFORMAÇÕES</a>
+                    <button><strong>COMPRAR INGRESSO</strong></button>
+                </div>
+
+                <br><br>
+
+                <table class="tabela-filme">
+                    <tr>
+                        <th>Ligua</th>
+                        <th>Horario</th>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td class="legendado">Legendado</td>
+                        <td>21:30</td>
+                    </tr>
+                    <tr>
+                        <td class="dublado">Dublado</td>
+                        <td>14:20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filme 2 -->
+
+    <div class="caixa-filme">
+        <div class="filme-container">
+            <img class="imagem-filmes" src="img/Avatar3.jpg" alt="Imagem filme Avatar 3 O Portador da Semente">
+            <div class="informacoes-filme">
+                <p class="titulo-filme"><strong>AVATAR 3 O PORTADOR DA SEMENTE</strong></p>
+
+                <P>COMING SOON
+                </P>
+
+                <div class="botoes-container">
+                    <a class="informacoes-botao" href="filmes/avatar3.html">MAIS INFORMAÇÕES</a>
+                    <button class="em-breve-botao"><strong>EM BREVE</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filme 3 -->
+
+    <div class="caixa-filme">
+        <div class="filme-container">
+            <img class="imagem-filmes" src="img/fnaf.webp" alt="Imagem filme FNAF">
+            <div class="informacoes-filme">
+                <p class="titulo-filme"><strong>FNAF</strong></p>
+
+                <P>Assim como no primeiro jogo, a trama acompanha o jovem Mike Schmidt.
+                    O rapaz tenta sair da pindaíba aceitando o emprego de vigia noturno na Freddy Fazbear’s
+                    Pizza. A coisa fica esquisita quando o trabalho aparentemente tranquilo se torna uma luta
+                    por sobrevivência quando os quatro mascotes animatrônicos do lugar ganham vida à noite e partem
+                    em busca de matar o que veem pela frente.
+                </P>
+
+                <div class="botoes-container">
+                    <a class="informacoes-botao" href="filmes/fnaf.html">MAIS INFORMAÇÕES</a>
+                    <button><strong>COMPRAR INGRESSO</strong></button>
+                </div>
+
+                <br><br>
+
+                <table class="tabela-filme">
+                    <tr>
+                        <th>Ligua</th>
+                        <th>Horario</th>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td class="legendado">Legendado</td>
+                        <td>19:40</td>
+                    </tr>
+                    <tr>
+                        <td class="dublado">Dublado</td>
+                        <td>20:30</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filme 4 -->
+
+    <div class="caixa-filme">
+        <div class="filme-container">
+            <img class="imagem-filmes" src="img/Mercenarios4.jpg" alt="Imagem filme Mercenarios 4">
+            <div class="informacoes-filme">
+                <p class="titulo-filme"><strong>MERCENARIOS 4</strong></p>
+
+                <P>A equipe enfrenta um traficante de armas que comanda um enorme exército privado.
+                    Munidos com todas as armas inimagináveis, os Mercenários são a última linha de defesa do mundo.
+                </P>
+
+                <div class="botoes-container">
+                    <a class="informacoes-botao" href="filmes/mercenarios4.html">MAIS INFORMAÇÕES</a>
+                    <button><strong>COMPRAR INGRESSO</strong></button>
+                </div>
+
+                <br><br>
+
+                <table class="tabela-filme">
+                    <tr>
+                        <th>Ligua</th>
+                        <th>Horario</th>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td class="legendado">Legendado</td>
+                        <td>22:00</td>
+                    </tr>
+                    <tr>
+                        <td class="dublado">Dublado</td>
+                        <td>15:20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
